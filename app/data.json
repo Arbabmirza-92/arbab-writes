@@ -1,0 +1,28 @@
+{
+    "phone": "+92 309 930 7527",
+    "email": "arbabirfan382@gmail.com",
+    "userId":"18",
+    "socialmedia": [
+    {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/ArbabIrfan",
+        "icon": "fab fa-facebook"
+    
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/Arbabmirza-92/",
+        "icon": "fab fa-instagram"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/arbabirfan-92/",
+        "icon": "fab fa-linkedin"
+    },
+    {
+        "name": "X (Twitter)",
+        "url": "https://twitter.com/YourUsername",  
+        "icon": "fab fa-x-twitter"
+    }
+]
+}
