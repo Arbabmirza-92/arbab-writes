@@ -38,10 +38,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_1234",     
-        "template_1234",    
+        "service_jfg2dek",     
+        "template_evxhqtm",    
         formRef.current,
-        "jJoVjoTG8prt6uFCZ"      
+        "_3Ffisjm9m61AKkDK"      
       )
       .then(
         () => {
@@ -191,7 +191,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg text-gray-800 dark:text-white">Email Us</h3>
-                  <p className="text-gray-600 dark:text-gray-300">arbabirfan382@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300"> arbabmirza291@gmail.com</p>
                 </div>
               </div>
 
@@ -218,20 +218,39 @@ export default function Contact() {
               </div>
 
               <div className="pt-4">
-                <h3 className="font-bold text-lg mb-3 text-gray-800 dark:text-white">Connect With Us</h3>
-                <div className="flex space-x-4">
-                  {data.socialmedia.map((social, index) => (
-                    <motion.a
-                      key={index}
-                      href="#"
-                      whileHover={{ y: -3 }}
-                      className={`w-10 h-10 rounded-full ${social.color}  flex items-center justify-center transition-colors duration-300`}
-                    >
-                      <i className={`text-xl ${social.icon}`}></i>
-                    </motion.a>
-                  ))}
-                </div>
-              </div>
+  <h3 className="font-bold text-lg mb-3 text-gray-800 dark:text-white">Connect With Us</h3>
+  <div className="flex space-x-4">
+    {[
+      { 
+        icon: <FaTwitter className="text-xl" />, 
+        color: "bg-blue-400 hover:bg-blue-500",
+        url: "https://twitter.com/yourusername"  
+      },
+      { 
+        icon: <FaLinkedin className="text-xl" />, 
+        color: "bg-blue-600 hover:bg-blue-700",
+        url: "https://www.linkedin.com/in/arbab-irfan"  
+      },
+      { 
+        icon: <FaGithub className="text-xl" />, 
+        color: "bg-gray-700 hover:bg-gray-800",
+        url: "https://github.com/Arbabmirza-92" 
+      }
+    ].map((social, index) => (
+      <motion.a
+        key={index}
+        href={social.url}
+        target="_blank"  
+        rel="noopener noreferrer" 
+        whileHover={{ y: -3 }}
+        className={`w-10 h-10 rounded-full ${social.color} text-white flex items-center justify-center transition-colors duration-300`}
+        aria-label={`${social.icon.type.displayName} profile`} 
+      >
+        {social.icon}
+      </motion.a>
+    ))}
+  </div>
+</div>
             </div>
           </motion.div>
         </div>

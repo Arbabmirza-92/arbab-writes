@@ -11,10 +11,10 @@ export default function Footer() {
           <a href="https://www.facebook.com/" className="hover:text-indigo-500 transition-colors" aria-label="Facebook">
             <FaFacebook />
           </a>
-          <a href="https://github.com/" className="hover:text-indigo-500 transition-colors" aria-label="GitHub">
+          <a href="https://github.com/Arbabmirza-92" className="hover:text-indigo-500 transition-colors" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/" className="hover:text-indigo-500 transition-colors" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/arbab-irfan" className="hover:text-indigo-500 transition-colors" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>
