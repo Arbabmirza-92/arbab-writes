@@ -15,12 +15,15 @@ import Footer from "./components/Footer";
 
 export const meta: MetaFunction = () => [
   { charset: "utf-8" },
-  { title: "Remix Blog" },
-  { name: "viewport", content: "width=device-width, initial-scale=1" },
+  { title: "Cooperate Talks | Business Insights by Arbab" },
+{ name: "description", content: "Business articles and insights by Arbab Irfan on Cooperate Talks." },
 ];
 
 export const links: LinksFunction = () => [
-  // Add stylesheet links
+  { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+  { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+  { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+  { rel: "manifest", href: "/site.webmanifest" },
 ];
 
 export default function App() {
